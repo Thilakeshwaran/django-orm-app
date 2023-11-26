@@ -46,4 +46,6 @@ I![exercise2output](https://github.com/Thilakeshwaran/django-orm-app/assets/1474
 
 
 
-## RESULT
+## RESULT 
+
+Thus the program for creating a database usimg ORM has been ececuted successfully
