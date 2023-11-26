@@ -11,19 +11,39 @@ Include your ER diagram here
 
 ### STEP 1:
 
+Install myapp using command prompt
+
 ### STEP 2:
+
+Edit  setting.py and model.py
 
 ### STEP 3:
 
-Write your own steps
+create a username and password usingfor your django 'python Createsuperuser' and then run the program using python manage.py runserver [your port number]
 
 ## PROGRAM
+```
+admin.py
+from django.contrib impot admin
+from.models import Football_player,Football_playerAdmin
+admin.site.register(football_player, Football_playerAdmin)
 
-Include your code here
-
+model.py
+from django.db inport models
+from django.contrib import admin
+class Football_player (models.Model):
+     Name-models.CharField(max_length=20)
+     Dob models.DateField()
+     Height models. IntegerField()
+     Address-models.CharField(max_length=100)
+     MobileNo=models. IntegerField()
+class Football_player (admib.ModelAdmin):
+     list_display=["Name", "Bob", "Height", "Address","MobileNo"]
+```
 ## OUTPUT
 
-Include the screenshot of your admin page.
+I![exercise2output](https://github.com/Thilakeshwaran/django-orm-app/assets/147473132/6f4cecb3-2f5c-48f8-88d4-28039b1f978f)
+
 
 
 ## RESULT
