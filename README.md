@@ -24,12 +24,12 @@ create a username and password usingfor your django 'python Createsuperuser' and
 ## PROGRAM
 ```
 admin.py
-from django.contrib impot admin
+from django.contrib import admin
 from.models import Football_player,Football_playerAdmin
 admin.site.register(football_player, Football_playerAdmin)
 
 model.py
-from django.db inport models
+from django.db import models
 from django.contrib import admin
 class Football_player (models.Model):
      Name-models.CharField(max_length=20)
@@ -37,7 +37,7 @@ class Football_player (models.Model):
      Height models. IntegerField()
      Address-models.CharField(max_length=100)
      MobileNo=models. IntegerField()
-class Football_player (admib.ModelAdmin):
+class Football_player (admin.ModelAdmin):
      list_display=["Name", "Bob", "Height", "Address","MobileNo"]
 ```
 ## OUTPUT
